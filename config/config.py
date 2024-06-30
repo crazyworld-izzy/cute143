@@ -20,17 +20,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "10284859"))
 
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7426421230:AAGQQ4TnGCdNbDBwWwxMbWtI0CUIeF5c8Bo")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://monivps5:monivps5@cluster0.kmbq8we.mongodb.net/?retryWrites=true&w=majority")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -40,7 +40,7 @@ CLEANMODE_DELETE_MINS = int(
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "50000")
+    getenv("DURATION_LIMIT", "150000")
 )  # Remember to give value in Minutes
 
 
@@ -71,12 +71,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002066328009"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6815918609").split())
+    map(int, getenv("OWNER_ID", "6900132473").split())
 )  # Input type must be interger
 
 
@@ -171,7 +171,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCc7zsACtecMkL6QqPOHyK40UXUCQs4vD9V1wRLuBqdPX5-eFPHCHJm4ypA3l2VtpTEzI4HG7iDAs0g0-7oXzZESuXuUVlsQYSwPetJ_ZYLlXzF9knZ4vmGgzj90aSECTASbQPuCiCmaHmtlz3fOzQJVOIPCcqua0Yag3HO1saxi2u3TsIgXSoAtYY2nuYUL30XZczChAJzOpvhPiytqhAfKLmxEx0AAbkISSwpsMb3S6TiAFv6MdnHMWTWBphd79naXKba25BfS-LhesJnEzi_rbJT_TQSTdGzqRvFOBz1EmjeiwR0UyZv8o0EJMwccgulWdaryDv1yXKCMa8E8Xas92xc3QAAAAGEyHmmAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -215,11 +215,11 @@ PHOTO = list(
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/91533956c91d0fd7c9f20.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -229,22 +229,22 @@ PLAYLIST_IMG_URL = getenv(
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://telegra.ph/file/de1db74efac1770b1e8e9.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/4dd9e2c231eaf7c290404.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://telegra.ph/file/8234d704952738ebcda7f.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "https://telegra.ph/file/8d02ff3bde400e465219a.jpg",
+    "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg",
 )
 
 STREAM_IMG_URL = getenv(
